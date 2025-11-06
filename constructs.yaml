@@ -120,3 +120,128 @@ constructs:
     components:
       delay of gratification: strong
       motivation / value alignment: medium
+
+models:
+  cybernetic_self_regulation:
+    label: Carver & Scheier — Cybernetic Control Model
+    key_papers:
+      - "Carver & Scheier (1998). On the Self-Regulation of Behavior."
+    dimensions:
+      level_of_analysis: "Goal–discrepancy feedback loops"
+      conflict: "Discrepancy between current & desired state"
+      emotion_role: "Signals progress vs. failure"
+      cognitive_function: "Monitoring → adjust behavior toward goals"
+    domain: "general"
+
+  goal_systems_theory:
+    label: Kruglanski — Goal Systems Theory
+    key_papers:
+      - "Kruglanski et al. (2002). Unified theory of goals."
+    dimensions:
+      level_of_analysis: "Network of interconnected goals"
+      conflict: "Competing goals"
+      emotion_role: "Not primary"
+      cognitive_function: "Managing goal structure"
+    domain: "general"
+
+  resource_model_ego_depletion:
+    label: Baumeister — Resource / Ego-depletion Model
+    key_papers:
+      - "Baumeister et al. (1998). Ego depletion."
+    dimensions:
+      level_of_analysis: "Energy/resource depletion over time"
+      conflict: "Effort vs. fatigue"
+      emotion_role: "Negative affect when effort is needed"
+      cognitive_function: "Control draws down limited resource"
+    domain: "general"
+
+  process_model_self_control:
+    label: Duckworth — Process Model of Self-Control
+    key_papers:
+      - "Duckworth et al. (2016). Situational strategies for self-control."
+    dimensions:
+      level_of_analysis: "Competition of impulses vs. goals over time"
+      conflict: "Temptation vs. valued goals"
+      emotion_role: "Aversive emotions increase temptation"
+      cognitive_function: "Choose strategies to shift valuation"
+    domain: "general"
+
+  expected_value_of_control:
+    label: EVC — Berkman / Shenhav
+    key_papers:
+      - "Shenhav et al. (2013). Expected value of control."
+      - "Berkman et al. (2017). Value-based choice of control."
+    dimensions:
+      level_of_analysis: "Value-based control decisions"
+      conflict: "Cost–benefit of exerting control"
+      emotion_role: "Affect/motivation influence valuation"
+      cognitive_function: "Control recruited when worth the cost"
+    domain: "general"
+
+  tri_process_model:
+    label: Hofmann — Tri-Process (Impulses, Reflections, Inhibitory Control)
+    key_papers:
+      - "Hofmann, Friese, & Strack (2009). Impulse and self-control."
+      - "Hofmann et al. (2012). Working memory capacity and self-regulation."
+    dimensions:
+      level_of_analysis: "Interactive systems: impulsive vs. reflective; inhibition moderates"
+      conflict: "Hot impulses vs. cool reflections"
+      emotion_role: "Affect fuels impulses; reappraisal can cool them"
+      cognitive_function: "Executive resources gate which system wins"
+    domain: "general"
+
+  hot_cool_system:
+    label: Metcalfe & Mischel — Hot/Cool System
+    key_papers:
+      - "Metcalfe & Mischel (1999). Hot/cool analysis of delay."
+    dimensions:
+      level_of_analysis: "Two systems: fast, emotional 'hot' vs. slow, cognitive 'cool'"
+      conflict: "Immediate temptations vs. abstract construals"
+      emotion_role: "Hot system is affect-laden and cue-driven"
+      cognitive_function: "Cool system recruits attention shifting, reframing"
+    domain: "general"
+
+  maps_model:
+    label: Frazier — MAPS Model of Self-Regulation
+    key_papers:
+      - "Frazier et al. (2021). The MAPS model of self-regulation."
+    dimensions:
+      level_of_analysis: "Motivation, Agency, Planning, Self-regulation (MAPS) as integrated drivers"
+      conflict: "Misalignment among motivation/agency vs. plans/strategies"
+      emotion_role: "Affect shapes motivation & agency; regulated across phases"
+      cognitive_function: "Metacognitive monitoring connects plans ↔ execution"
+    domain: "general"
+
+  zimmerman_srl_cycle:
+    label: Zimmerman — SRL Cyclical Phases
+    key_papers:
+      - "Zimmerman (2000). Attaining self-regulation."
+    dimensions:
+      level_of_analysis: "Forethought → Performance control → Self-reflection"
+      conflict: "Task demands vs. strategy/effort allocation"
+      emotion_role: "Motivation/self-efficacy and affect guide phase transitions"
+      cognitive_function: "Planning, monitoring, strategy adaptation, reflection"
+    domain: "education/SRL"
+
+  pintrich_srl:
+    label: Pintrich — SRL Component Model
+    key_papers:
+      - "Pintrich (2000; 2004). SRL framework."
+    dimensions:
+      level_of_analysis: "Regulation of cognition, motivation/affect, behavior, and context"
+      conflict: "Goal orientation and task constraints vs. resources/strategies"
+      emotion_role: "Motivation/affect explicitly regulated (value, expectancy, cost)"
+      cognitive_function: "Monitoring & control at multiple targets"
+    domain: "education/SRL"
+
+  boekaerts_dual_processing:
+    label: Boekaerts — Dual Processing / Appraisal
+    key_papers:
+      - "Boekaerts (1996; 1998). Executive control meets motivation."
+      - "Boekaerts, Pintrich, & Zeidner (2000). *Handbook of Self-Regulation*."
+    dimensions:
+      level_of_analysis: "Growth pathway (learning) vs. Well-being pathway (protection)"
+      conflict: "Task progress vs. emotion/threat regulation needs"
+      emotion_role: "Central: appraisal routes learners to growth vs. protection"
+      cognitive_function: "Strategy selection shifts with appraisals and goal states"
+    domain: "education/SRL"
