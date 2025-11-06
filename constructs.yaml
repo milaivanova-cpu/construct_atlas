@@ -1,21 +1,12 @@
-schema_version: 0.1
-components_taxonomy:
-  - inhibitory control
-  - delay of gratification
-  - interference control
-  - attentional control
-  - working memory
-  - planning / goal maintenance
-  - monitoring / metacognition
-  - emotion regulation
-  - motivation / value alignment
-  - strategy use
-
 constructs:
   self-control:
     label: Self-control
     synonyms: ["self control","self-discipline","willpower","effortful control (overlap)"]
     definition: "The capacity to align behavior with longer-term, valued goals when in conflict with impulses, habits, or temptations."
+    citations:
+      - "Duckworth, A. L., & Kern, M. L. (2011). A meta-analysis of the convergent validity of self-control measures. *JEP*, 100(2), 271–286. https://doi.org/10.1037/a0021357"
+      - "Duckworth, A. L., Gendler, T. S., & Gross, J. J. (2016). Situational strategies for self-control. *Perspectives on Psychological Science*, 11(1), 35–55. https://doi.org/10.1177/1745691615623247"
+      - "Inzlicht, M., & Berkman, E. T. (2015). The paradox of ego depletion. *Psychological Science*, 26(4), 535–546. https://doi.org/10.1177/0956797615564914"
     components:
       inhibitory control: strong
       delay of gratification: medium
@@ -33,30 +24,23 @@ constructs:
       - name: Brief Self-Control Scale (BSCS-13)
         type: self-report
         targets: ["trait self-control"]
-        notes: "Widely used; jangle risk with grit."
+        citation: "Tangney, Baumeister, & Boone (2004). High self-control predicts good adjustment. JPSP. https://doi.org/10.1037/0022-3514.88.4.764"
       - name: Delay Discounting Tasks (MCQ variants)
         type: behavioral
         targets: ["temporal valuation / patience"]
       - name: Go/No-Go; Stop-Signal
         type: behavioral
         targets: ["inhibitory control"]
-    interventions:
-      - name: MCII / WOOP
-        target_components: ["motivation / value alignment","planning / goal maintenance"]
-        strength: strong
-      - name: Implementation intentions (if–then)
-        target_components: ["planning / goal maintenance","strategy use"]
-        strength: medium
-      - name: Reappraisal training
-        target_components: ["emotion regulation","motivation / value alignment"]
-        strength: suggestive
-    exemplar_outcomes: ["academic persistence","health behaviors","reduced externalizing"]
     notes: "Boundary with SRL and emotion regulation is porous."
 
   self-regulation:
     label: Self-regulation (SRL)
     synonyms: ["self regulation","SRL","self-management"]
     definition: "Cyclical processes of planning, monitoring, strategy use, and reflection that guide goal pursuit in context."
+    citations:
+      - "Zimmerman, B. J. (2000). Attaining self-regulation. *Theory Into Practice*, 41(2), 64–70."
+      - "Pintrich, P. R. (2000). The role of goal orientation in SRL. *Contemporary Educational Psychology*, 25(1), 92–104."
+      - "Boekaerts, M., Pintrich, P. R., & Zeidner, M. (1999). *Handbook of Self-Regulation*. Academic Press."
     components:
       planning / goal maintenance: strong
       monitoring / metacognition: strong
@@ -66,119 +50,59 @@ constructs:
     theories:
       - SRL cycle models (forethought–performance–reflection)
       - cybernetic control / discrepancy reduction
-    mechanisms:
-      - feedback loops (discrepancy detection → strategy adaptation)
     measures:
-      - name: SRL self-report scales (Pintrich/Boekaerts variants)
+      - name: MSLQ – SRL Scales
         type: self-report
         targets: ["planning","monitoring","strategy use"]
+        citation: "Pintrich et al. (1991). MSLQ development. *Educational & Psychological Measurement*."
       - name: Think-aloud / trace measures
         type: process-tracing
         targets: ["monitoring / metacognition","strategy use"]
-    interventions:
-      - name: SRL strategy instruction + reflection journals
-        target_components: ["planning / goal maintenance","monitoring / metacognition","strategy use"]
-        strength: strong
-      - name: Goal-setting + progress monitoring
-        target_components: ["planning / goal maintenance","monitoring / metacognition"]
-        strength: medium
-    exemplar_outcomes: ["learning gains","transfer","persistence"]
-    notes: "Jingle risk with 'self-control' when only trait surveys are used."
 
   executive-function:
     label: Executive Function (EF)
     synonyms: ["executive functions","cognitive control"]
     definition: "A set of neurocognitive capacities enabling goal-directed behavior, including working memory, inhibitory control, and cognitive flexibility."
+    citations:
+      - "Miyake et al. (2000). Unity and diversity of EF. *Cognitive Psychology*, 41(1), 49–100."
+      - "Diamond, A. (2013). Executive functions. *Annual Review of Psychology*, 64, 135–168."
     components:
       inhibitory control: strong
       working memory: strong
       interference control: medium
       attentional control: medium
       planning / goal maintenance: medium
-    theories:
-      - unity/diversity of EF
-      - control-signal theory
-    mechanisms:
-      - prefrontal–striatal control loops
-    measures:
-      - name: Stroop
-        type: behavioral
-        targets: ["interference control"]
-      - name: Flanker / ANT
-        type: behavioral
-        targets: ["attentional control","interference control"]
-      - name: N-back
-        type: behavioral
-        targets: ["working memory"]
-    interventions:
-      - name: EF training (mixed evidence)
-        target_components: ["working memory","inhibitory control"]
-        strength: contested
-    exemplar_outcomes: ["adaptive behavior","rule following"]
-    notes: "Not equivalent to SRL; jangle risk when EF tasks are used as self-control proxies."
 
   grit:
     label: Grit
     synonyms: ["perseverance and passion for long-term goals"]
     definition: "Perseverance and sustained interest toward long-term goals."
+    citations:
+      - "Duckworth, Peterson, Matthews, & Kelly (2007). Grit. *JPSP*, 92(6), 1087–1101."
+      - "Credé, Tynan, & Harms (2017). Meta-analysis showing grit ~ conscientiousness. *JPSP*, 113(3), 492–511."
     components:
       motivation / value alignment: medium
       planning / goal maintenance: medium
-      strategy use: low
-    theories:
-      - personality facets related to conscientiousness
-    mechanisms: []
-    measures:
-      - name: Grit-S
-        type: self-report
-        targets: ["perseverance","consistency of interest"]
-    interventions: []
-    exemplar_outcomes: ["long-term goal persistence"]
-    notes: "Jangle with self-control; distinct predictive profile."
 
   inhibitory-control:
     label: Inhibitory Control
     synonyms: ["response inhibition"]
     definition: "The ability to suppress a dominant or prepotent response."
+    citations:
+      - "Logan & Cowan (1984). The stop-signal paradigm. *Psychological Review*, 91(3), 295–327."
+      - "Friedman & Miyake (2017). EF in adulthood. *Current Directions in Psychological Science*, 26(3), 232–242."
     components:
       inhibitory control: strong
       interference control: medium
-      attentional control: medium
-    theories: ["response inhibition models"]
-    mechanisms: ["stop-process gating","prepotent response suppression"]
-    measures:
-      - name: Stop-Signal (SSRT)
-        type: behavioral
-        targets: ["inhibitory control"]
-      - name: Go/No-Go
-        type: behavioral
-        targets: ["inhibitory control"]
-    interventions:
-      - name: Inhibition practice tasks
-        target_components: ["inhibitory control"]
-        strength: suggestive
-    exemplar_outcomes: ["impulse control","rule compliance"]
-    notes: "A component rather than a full construct family."
 
   delay-discounting:
     label: Delay Discounting
     synonyms: ["temporal discounting","intertemporal choice"]
-    definition: "How subjective value declines as a function of delay; a behavioral proxy for patience."
+    definition: "How subjective value declines as a function of delay."
+    citations:
+      - "Ainslie (1975). Specious reward. *Behavioral & Brain Sciences*, 2(4), 437–452."
+      - "Mazur (1987). Hyperbolic discounting. In *Quantitative Analyses of Behavior*."
+      - "Kirby, Petry, & Bickel (1999). MCQ. *Experimental & Clinical Psychopharmacology*, 7(1), 25–36."
     components:
       delay of gratification: strong
       motivation / value alignment: medium
-    theories:
-      - hyperbolic discounting
-      - dual-self models of intertemporal choice
-    mechanisms:
-      - valuation conflict between immediate vs. delayed rewards
-    measures:
-      - name: Monetary Choice Questionnaire (MCQ)
-        type: behavioral
-        targets: ["discount rate (k)"]
-    interventions:
-      - name: Episodic future thinking
-        target_components: ["valuation / delay"]
-        strength: suggestive
-    exemplar_outcomes: ["financial choices","health behavior"]
-    notes: "A measure/process rather than a construct; jingle risk when labeled as self-control."
