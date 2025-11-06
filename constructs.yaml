@@ -1,0 +1,184 @@
+schema_version: 0.1
+components_taxonomy:
+  - inhibitory control
+  - delay of gratification
+  - interference control
+  - attentional control
+  - working memory
+  - planning / goal maintenance
+  - monitoring / metacognition
+  - emotion regulation
+  - motivation / value alignment
+  - strategy use
+
+constructs:
+  self-control:
+    label: Self-control
+    synonyms: ["self control","self-discipline","willpower","effortful control (overlap)"]
+    definition: "The capacity to align behavior with longer-term, valued goals when in conflict with impulses, habits, or temptations."
+    components:
+      inhibitory control: strong
+      delay of gratification: medium
+      attentional control: medium
+      motivation / value alignment: strong
+      planning / goal maintenance: medium
+    theories:
+      - dual-systems / top-down control
+      - process model of self-control
+      - expected value of control (EVC)
+    mechanisms:
+      - conflict monitoring → control allocation
+      - valuation shift via mental contrasting or reappraisal
+    measures:
+      - name: Brief Self-Control Scale (BSCS-13)
+        type: self-report
+        targets: ["trait self-control"]
+        notes: "Widely used; jangle risk with grit."
+      - name: Delay Discounting Tasks (MCQ variants)
+        type: behavioral
+        targets: ["temporal valuation / patience"]
+      - name: Go/No-Go; Stop-Signal
+        type: behavioral
+        targets: ["inhibitory control"]
+    interventions:
+      - name: MCII / WOOP
+        target_components: ["motivation / value alignment","planning / goal maintenance"]
+        strength: strong
+      - name: Implementation intentions (if–then)
+        target_components: ["planning / goal maintenance","strategy use"]
+        strength: medium
+      - name: Reappraisal training
+        target_components: ["emotion regulation","motivation / value alignment"]
+        strength: suggestive
+    exemplar_outcomes: ["academic persistence","health behaviors","reduced externalizing"]
+    notes: "Boundary with SRL and emotion regulation is porous."
+
+  self-regulation:
+    label: Self-regulation (SRL)
+    synonyms: ["self regulation","SRL","self-management"]
+    definition: "Cyclical processes of planning, monitoring, strategy use, and reflection that guide goal pursuit in context."
+    components:
+      planning / goal maintenance: strong
+      monitoring / metacognition: strong
+      strategy use: strong
+      emotion regulation: medium
+      motivation / value alignment: medium
+    theories:
+      - SRL cycle models (forethought–performance–reflection)
+      - cybernetic control / discrepancy reduction
+    mechanisms:
+      - feedback loops (discrepancy detection → strategy adaptation)
+    measures:
+      - name: SRL self-report scales (Pintrich/Boekaerts variants)
+        type: self-report
+        targets: ["planning","monitoring","strategy use"]
+      - name: Think-aloud / trace measures
+        type: process-tracing
+        targets: ["monitoring / metacognition","strategy use"]
+    interventions:
+      - name: SRL strategy instruction + reflection journals
+        target_components: ["planning / goal maintenance","monitoring / metacognition","strategy use"]
+        strength: strong
+      - name: Goal-setting + progress monitoring
+        target_components: ["planning / goal maintenance","monitoring / metacognition"]
+        strength: medium
+    exemplar_outcomes: ["learning gains","transfer","persistence"]
+    notes: "Jingle risk with 'self-control' when only trait surveys are used."
+
+  executive-function:
+    label: Executive Function (EF)
+    synonyms: ["executive functions","cognitive control"]
+    definition: "A set of neurocognitive capacities enabling goal-directed behavior, including working memory, inhibitory control, and cognitive flexibility."
+    components:
+      inhibitory control: strong
+      working memory: strong
+      interference control: medium
+      attentional control: medium
+      planning / goal maintenance: medium
+    theories:
+      - unity/diversity of EF
+      - control-signal theory
+    mechanisms:
+      - prefrontal–striatal control loops
+    measures:
+      - name: Stroop
+        type: behavioral
+        targets: ["interference control"]
+      - name: Flanker / ANT
+        type: behavioral
+        targets: ["attentional control","interference control"]
+      - name: N-back
+        type: behavioral
+        targets: ["working memory"]
+    interventions:
+      - name: EF training (mixed evidence)
+        target_components: ["working memory","inhibitory control"]
+        strength: contested
+    exemplar_outcomes: ["adaptive behavior","rule following"]
+    notes: "Not equivalent to SRL; jangle risk when EF tasks are used as self-control proxies."
+
+  grit:
+    label: Grit
+    synonyms: ["perseverance and passion for long-term goals"]
+    definition: "Perseverance and sustained interest toward long-term goals."
+    components:
+      motivation / value alignment: medium
+      planning / goal maintenance: medium
+      strategy use: low
+    theories:
+      - personality facets related to conscientiousness
+    mechanisms: []
+    measures:
+      - name: Grit-S
+        type: self-report
+        targets: ["perseverance","consistency of interest"]
+    interventions: []
+    exemplar_outcomes: ["long-term goal persistence"]
+    notes: "Jangle with self-control; distinct predictive profile."
+
+  inhibitory-control:
+    label: Inhibitory Control
+    synonyms: ["response inhibition"]
+    definition: "The ability to suppress a dominant or prepotent response."
+    components:
+      inhibitory control: strong
+      interference control: medium
+      attentional control: medium
+    theories: ["response inhibition models"]
+    mechanisms: ["stop-process gating","prepotent response suppression"]
+    measures:
+      - name: Stop-Signal (SSRT)
+        type: behavioral
+        targets: ["inhibitory control"]
+      - name: Go/No-Go
+        type: behavioral
+        targets: ["inhibitory control"]
+    interventions:
+      - name: Inhibition practice tasks
+        target_components: ["inhibitory control"]
+        strength: suggestive
+    exemplar_outcomes: ["impulse control","rule compliance"]
+    notes: "A component rather than a full construct family."
+
+  delay-discounting:
+    label: Delay Discounting
+    synonyms: ["temporal discounting","intertemporal choice"]
+    definition: "How subjective value declines as a function of delay; a behavioral proxy for patience."
+    components:
+      delay of gratification: strong
+      motivation / value alignment: medium
+    theories:
+      - hyperbolic discounting
+      - dual-self models of intertemporal choice
+    mechanisms:
+      - valuation conflict between immediate vs. delayed rewards
+    measures:
+      - name: Monetary Choice Questionnaire (MCQ)
+        type: behavioral
+        targets: ["discount rate (k)"]
+    interventions:
+      - name: Episodic future thinking
+        target_components: ["valuation / delay"]
+        strength: suggestive
+    exemplar_outcomes: ["financial choices","health behavior"]
+    notes: "A measure/process rather than a construct; jingle risk when labeled as self-control."
