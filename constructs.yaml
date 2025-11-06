@@ -1,3 +1,17 @@
+schema_version: 0.1
+
+components_taxonomy:
+  - inhibitory control
+  - delay of gratification
+  - interference control
+  - attentional control
+  - working memory
+  - planning / goal maintenance
+  - monitoring / metacognition
+  - emotion regulation
+  - motivation / value alignment
+  - strategy use
+
 constructs:
   self-control:
     label: Self-control
